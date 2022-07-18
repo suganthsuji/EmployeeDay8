@@ -1,23 +1,16 @@
 package com.example;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+ class EmployeeAttendance extends EmployeeWage{
+    int employeeAttendance(){
+        double attendance=Math.floor(Math.random()*1000%2);
 
-public class EmployeeAttendance {
-    void employeeAttendance(){
-        List<String> employeeStatus = new ArrayList<>();
-        employeeStatus.add("PRESENT");
-        employeeStatus.add("ABSENT");
-        Random random=new Random();
-        String attendance = employeeStatus.get(random.nextInt(employeeStatus.size()));
-
-        if (attendance=="ABSENT")
+        if (attendance==0)
         {
             System.out.println("Employee is ABSENT");
         }
 		else{
             System.out.println("Employee is PRESENT");
       }
+        return (int)attendance;
     }
 }
