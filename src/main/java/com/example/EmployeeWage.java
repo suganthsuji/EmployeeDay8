@@ -2,9 +2,12 @@ package com.example;
 
 import java.util.Scanner;
 
+
 public class EmployeeWage {
+    int wagePerHours=20;
+    int noOfDays=20;
     void calculateWage(int attendance,int employee){
-        int wagePerHours=20;
+
         int noOfHour=8;
 
         if(attendance==0){
@@ -14,13 +17,18 @@ public class EmployeeWage {
                 Scanner scanner=new Scanner(System.in);
                 noOfHour=scanner.nextInt();
                 System.out.println("Total wages for Employee is "+ noOfHour*wagePerHours);
+
             }
             else {
                 System.out.println("Total wages for Employee is "+ 8*wagePerHours);
+                calculateWageForMonth();
             }
 
         }
 
+    }
+    void calculateWageForMonth(){
+        System.out.println("Total wages for Employee is "+ 8*wagePerHours*noOfDays);
 
     }
 }
