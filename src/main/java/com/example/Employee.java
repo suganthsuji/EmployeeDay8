@@ -23,5 +23,8 @@ public class Employee extends EmployeeAttendance {
                 employeeAttendance.calculateWage(attendance,1);
                 break;
         }
+        int attendance=employeeAttendance.employeeAttendance();
+        double wagesTotal=calculateUsingCondition(attendance);
+        System.out.println(wagesTotal);
     }
 }
