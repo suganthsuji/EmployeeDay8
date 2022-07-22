@@ -16,7 +16,7 @@ public class EmployeeWage {
             if(employee==0){
                 Scanner scanner=new Scanner(System.in);
                 noOfHour=scanner.nextInt();
-                System.out.println("Total wages for Employee is "+ noOfHour*wagePerHours);
+                System.out.println("Total wages for Part Time Employee is "+ noOfHour*wagePerHours);
 
             }
             else {
